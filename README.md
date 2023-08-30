@@ -14,3 +14,12 @@ The project has 5 versions, as follows:
 - V03 - Starting with this version, I tried to implement methods of verifying, using PEAQ and VISQOL, the perceptual evaluation of the sound quality. So, in this version of the project, I first saved the original sound in the y array, then saved it once more in the OrigTo16k array. Then, I downsampled and upsampled the original sound, y. To the second one, OrigTo16k array, I downsampled it directly to 16kHz Fs, after I filtered it. This way, I compared the signals OrigTo16K and y3_filtered using the perception evaluation algorithms, both having a sample frequency of 16kHz. 
 - V04 - In this version I used an upsampling factor of 6, after downsampling the signal to 8kHz Fs, thus the signal has a 48kHz through upsampling and filtering. I did this thing to compare the final signal and the original signal, although the final signal has a 48kHz sample frequency. I compared the files 1man.wav and Upsampled_signal.wav
 - V05 - This version has the same approach as V03, with the difference that instead of Low pass filter, I used a band-pass filter, with cutoff freq1 = 30 Hz, cutoff freq2 = 4000Hz. I wanted to see if there is any difference in PEAQ and VISQOL results after eliminating the low frequency components. I used for comparison the files OrigTo16k.wav and Upsampled_signal.wav
+
+
+Folder structure:
+- PEAK - contains the Perceptual Evaluation of Audio Quality standardized algorithm for objectivitely measuring perceived audio quality, NOT implemented by me;
+- Folders Proiect V01-V05 contain the versions of the project, detailed above;
+- visqol - contains the Virtual Speech Quality Objective Listener algorithm, NOT implemented by me;
+- Audio signal processing Resampling.pdf file contains the requirements for this project, mentioned above;
+- The files Documentatie proiect PNS_Codrina Ignat.pdf and .docx are both a detailed documentation of the project, in Romanian;
+- Linkuri pt proiect.txt is a text file with some reference links for the project.
